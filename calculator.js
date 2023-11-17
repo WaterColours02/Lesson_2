@@ -10,10 +10,10 @@ function invalidNumber(num) {
 }
 
 // prompt('Welcome to the Calculator!');
-prompt(messages['welcome']);
+prompt(messages['en']['welcome']);
 
 // prompt('Would you lik to perform another calculation? (y/n)');
-prompt(messages['calculation']);
+prompt(messages['en']['calculation']);
 let response = readline.question();
 
 // Yes or No response validation
@@ -22,29 +22,29 @@ function invalidAnswer(response) {
 }
 
 while (invalidAnswer(response)) {
-    prompt(messages["invalidAnswer"]);
+    prompt(messages['en']["invalidAnswer"]);
     response = readline.question();
   }
 
 while (response === 'y') {
 
-prompt(messages['firstNumber']);
+prompt(messages['en']['firstNumber']);
 let number1 = readline.question();
 
 while (invalidNumber(number1)) {
-  prompt(messages['invalidNumber']);
+  prompt(messages['en']['invalidNumber']);
   number1 = readline.question();
 }
 
-prompt(messages['secondNumber']);
+prompt(messages['en']['secondNumber']);
 let number2 = readline.question();
 
 while (invalidNumber(number2)) {
-  prompt(messages['invalidNumber']);
+  prompt(messages['en']['invalidNumber']);
   number2 = readline.question();
 }
 
-prompt(messages['operator']);
+prompt(messages['en']['operator']);
 let operation = readline.question();
 
 while (!['1', '2', '3', '4', '5'].includes(operation)) {
@@ -73,9 +73,9 @@ switch (operation) {
     break;
 }
 
-prompt(`The result is: ${output}`);
+prompt(messages['en']['result'] + `${output}`);
 
-prompt(messages['anotherCalculation']);
+prompt(messages['en']['anotherCalculation']);
 response = readline.question();
 }
 

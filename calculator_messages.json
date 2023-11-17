@@ -1,12 +1,28 @@
 
 {
-    "welcome" :"Welcome to the Calculator!",
-    "anotherCalculation" : "Would you like to perform another calculation? (y/n)",
-    "calculation" : "Would you like to perform a calculation? (y/n)",
-    "firstNumber" : "Please enter the first number: ",
-    "secondNumber" : "Please enter the second number: ",
-    "operator" : "what operation would you like to perform? 1) Add 2) Subtract 3) Multiply 4) Divide 5) exponentiate",
-    "invalidNumber" : "Hmm... that does not look like a valid number",
-    "invalidAnswer" : "Hmm... that does not look like a valid answer. Please try again.",
-    "invalidOperator" : "Hmm... that does not look like a valid operator. Please try again."
+    "en" : {
+        "welcome" :"Welcome to the Calculator!",
+        "anotherCalculation" : "Would you like to perform another calculation? (y/n)",
+        "calculation" : "Would you like to perform a calculation? (y/n)",
+        "firstNumber" : "Please enter the first number: ",
+        "secondNumber" : "Please enter the second number: ",
+        "operator" : "what operation would you like to perform? 1) Add 2) Subtract 3) Multiply 4) Divide 5) exponentiate",
+        "invalidNumber" : "Hmm... that does not look like a valid number",
+        "invalidAnswer" : "Hmm... that does not look like a valid answer. Please try again.",
+        "invalidOperator" : "Hmm... that does not look like a valid operator. Please try again.",
+        "result" : "The result is: "
+    },
+
+    "fr" : {
+        "welcome" :"Bienvenue à la calculatrice!",
+        "anotherCalculation" : "Voulez-vous effectuer un autre calcul? (y/n)",
+        "calculation" : "Voulez-vous effectuer un calcul? (y/n)",
+        "firstNumber" : "S'il vous plaît entrer le premier nombre: ",
+        "secondNumber" : "S'il vous plaît entrer le deuxième nombre: ",
+        "operator" : "Quelle opération souhaitez-vous effectuer? 1) Ajouter 2) Soustraire 3) Multiplier 4) Diviser 5) Exponentier",
+        "invalidNumber" : "Hmm... cela ne ressemble pas à un nombre valide",
+        "invalidAnswer" : "Hmm... cela ne ressemble pas à une réponse valide. Veuillez réessayer.",
+        "invalidOperator" : "Hmm... cela ne ressemble pas à un opérateur valide. Veuillez réessayer.",
+        "result" : "Le résultat est: "
+    }
 }
