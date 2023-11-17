@@ -1,9 +1,3 @@
-// ask the use for the first number
-//ask the use for the second number
-//ask the user for the operation
-// perform the operation
-// display the result of the operation
-
 const readline = require('readline-sync');
 
 function prompt (message) {
@@ -15,6 +9,21 @@ function invalidNumber(num) {
 }
 
 prompt('Welcome to the Calculator!');
+
+prompt('Would you lik to perform another calculation? (y/n)');
+let response = readline.question();
+
+// Yes or No response validation
+function invalidAnswer(response) {
+    return String.trimStart === `` || !['y', 'n'].includes(response);
+}
+
+while (invalidAnswer(response)) {
+    prompt('Hmm... that doesn\'t look like a valid answer');
+    response = readline.question();
+  }
+
+while (response === 'y') {
 
 prompt('What is the first number?');
 let number1 = readline.question();
@@ -61,6 +70,9 @@ switch (operation) {
     break;
 }
 
-
 prompt(`The result is: ${output}`);
+
+prompt('Would you lik to perform another calculation? (y/n)');
+response = readline.question();
+}
 
