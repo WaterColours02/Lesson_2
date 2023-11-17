@@ -1,4 +1,5 @@
 const readline = require('readline-sync');
+const messages = require('./calculator_messages.json');
 
 function prompt (message) {
   console.log(`=> ${message}`);
@@ -8,9 +9,11 @@ function invalidNumber(num) {
   return num.trimStart() === '' || Number.isNaN(Number(num));
 }
 
-prompt('Welcome to the Calculator!');
+// prompt('Welcome to the Calculator!');
+prompt(messages['welcome']);
 
-prompt('Would you lik to perform another calculation? (y/n)');
+// prompt('Would you lik to perform another calculation? (y/n)');
+prompt(messages['calculation']);
 let response = readline.question();
 
 // Yes or No response validation
@@ -19,29 +22,29 @@ function invalidAnswer(response) {
 }
 
 while (invalidAnswer(response)) {
-    prompt('Hmm... that doesn\'t look like a valid answer');
+    prompt(messages["invalidAnswer"]);
     response = readline.question();
   }
 
 while (response === 'y') {
 
-prompt('What is the first number?');
+prompt(messages['firstNumber']);
 let number1 = readline.question();
 
 while (invalidNumber(number1)) {
-  prompt('Hmm... that doesn\'t look like a valid number');
+  prompt(messages['invalidNumber']);
   number1 = readline.question();
 }
 
-prompt('What is the second number?');
+prompt(messages['secondNumber']);
 let number2 = readline.question();
 
 while (invalidNumber(number2)) {
-  prompt('Hmm... that doesn\'t look like a valid number');
+  prompt(messages['invalidNumber']);
   number2 = readline.question();
 }
 
-prompt("what operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide 5) exponentiate");
+prompt(messages['operator']);
 let operation = readline.question();
 
 while (!['1', '2', '3', '4', '5'].includes(operation)) {
@@ -72,7 +75,7 @@ switch (operation) {
 
 prompt(`The result is: ${output}`);
 
-prompt('Would you lik to perform another calculation? (y/n)');
+prompt(messages['anotherCalculation']);
 response = readline.question();
 }
 

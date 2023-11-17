@@ -1,0 +1,12 @@
+
+{
+    "welcome" :"Welcome to the Calculator!",
+    "anotherCalculation" : "Would you like to perform another calculation? (y/n)",
+    "calculation" : "Would you like to perform a calculation? (y/n)",
+    "firstNumber" : "Please enter the first number: ",
+    "secondNumber" : "Please enter the second number: ",
+    "operator" : "what operation would you like to perform? 1) Add 2) Subtract 3) Multiply 4) Divide 5) exponentiate",
+    "invalidNumber" : "Hmm... that does not look like a valid number",
+    "invalidAnswer" : "Hmm... that does not look like a valid answer. Please try again.",
+    "invalidOperator" : "Hmm... that does not look like a valid operator. Please try again."
+}
